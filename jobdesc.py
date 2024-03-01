@@ -17,6 +17,8 @@ def get_gemini_repsonse(input,image,prompt):
     return response.text
 
 def input_image_setup(uploaded_file):
+    uploaded_file = st.file_uploader("Upload your resume", type=['jpg', 'pdf', 'png'])
+
     # Check if a file has been uploaded
     if uploaded_file is not None:
         # Read the file into bytes
@@ -51,7 +53,6 @@ all_jobs = [
 
 
 selected_job = st.selectbox('Select a job:', all_jobs)
-uploaded_file = st.file_uploader("Upload your resume", type=['jpg', 'pdf', 'png'])
 
 
 image=""   
