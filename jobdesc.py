@@ -62,8 +62,8 @@ if uploaded_file is not None:
 
 submit=st.button("Check the Resume")
 
-input_prompt="""
-You are an expert in Job descriptery u should check the uploaded resume from user and """ , "selected_job",  """ u have to analyze the resume and say how much it has been 
+input_prompt=f"""
+You are an expert in Job descriptery u should check the uploaded resume from user and  {selected_job} u have to analyze the resume and say how much it has been 
 matched with the selected job description , u have to mach the skill sets of resume and other u need to predic the percenage and if he is not
  having that skill set u have to give him eha skills he need to develop
                ----
@@ -71,6 +71,8 @@ matched with the selected job description , u have to mach the skill sets of res
 
 
 """
+
+print(input_prompt)
 
 ## If submit button is clicked
 
