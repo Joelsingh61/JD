@@ -17,7 +17,7 @@ def get_gemini_repsonse(input,image,prompt):
     return response.text
 
 def input_image_setup(uploaded_file):
-    uploaded_file = st.file_uploader("Upload your resume", type=['jpg', 'pdf', 'png'])
+   
 
     # Check if a file has been uploaded
     if uploaded_file is not None:
@@ -40,7 +40,7 @@ st.set_page_config(page_title="JJD")
 
 st.header("JJD")
 input=st.text_input("Input Prompt: ",key="input")
-
+ uploaded_file = st.file_uploader("Upload your resume", type=['jpg', 'pdf', 'png'])
 
 
 # List of all jobs (replace with your complete list)
