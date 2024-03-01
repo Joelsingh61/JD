@@ -51,7 +51,8 @@ all_jobs = [
 
 
 selected_job = st.selectbox('Select a job:', all_jobs)
-uploaded_file = st.file_uploader("Upload your resume", type=['jpg', 'pdf', 'png'])
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+
 
 
 image=""   
